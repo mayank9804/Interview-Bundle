@@ -1,7 +1,7 @@
 package com.codr.framework;
 
 /**
- * Abstract class that will be extended by different kind of content displayers.
+ * Interface that will be implemented by each solution to format the expected output.
  * @param <T>
  */
 public interface Visualizer<T> {

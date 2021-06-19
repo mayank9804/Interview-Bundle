@@ -1,7 +1,7 @@
 package com.codr.framework;
 
 /**
- * Interface which will be modelled by each Question.
+ * Abstract class which will be extended by each Question.
  * @param <T>
  */
 public abstract class Question<T, U>  implements Visualizer<T>{
