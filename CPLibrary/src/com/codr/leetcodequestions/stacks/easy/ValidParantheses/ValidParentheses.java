@@ -1,6 +1,6 @@
 package com.codr.leetcodequestions.stacks.easy.ValidParantheses;
 
-import com.codr.leetcodequestions.framework.Question;
+import com.codr.framework.Question;
 import com.codr.leetcodequestions.stacks.easy.ValidParantheses.data.ValidParenthesesInputModel;
 import com.codr.leetcodequestions.stacks.easy.ValidParantheses.data.ValidParenthesesOutputModel;
 

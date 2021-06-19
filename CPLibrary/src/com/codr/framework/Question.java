@@ -1,4 +1,4 @@
-package com.codr.leetcodequestions.framework;
+package com.codr.framework;
 
 /**
  * Interface which will be modelled by each Question.
