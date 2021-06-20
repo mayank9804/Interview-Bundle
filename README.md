@@ -13,6 +13,6 @@
 * NOTE: The new question file need to implement `solve`, `display` and `takeInput` model, which is invoked by `process` method.
 
 
-* Whats with that name ? *
+### Whats with that name ? 
 * My laptop was running low on battery and this notification appeared when Github was asking for name. So, its just a random name, will change it later.
 
