@@ -1,5 +1,7 @@
 package com.codr;
 
+import com.codr.leetcodequestions.stacks.easy.BinaryTreeInorderTraversal.BinaryTreeInorderTraversal;
+import com.codr.leetcodequestions.stacks.easy.BuildArrayWithStack.BuildArrayWithStack;
 import com.codr.leetcodequestions.stacks.easy.RemoveAllAdjacentDuplicates.RemoveAllAdjacentDuplicates;
 import com.codr.leetcodequestions.stacks.easy.RemoveOutermostParentheses.RemoveOutermostParentheses;
 import com.codr.leetcodequestions.stacks.easy.ValidParantheses.ValidParentheses;
@@ -20,6 +22,8 @@ public class Main {
 //        new LargestRectangleInHistogram().process(2);
 //        new MaximalRectangle().process(1);
 //        new RemoveOutermostParentheses().process(3);
-        new RemoveAllAdjacentDuplicates().process(2);
+//        new RemoveAllAdjacentDuplicates().process(2);
+//        new BuildArrayWithStack().process(2);
+        new BinaryTreeInorderTraversal().process(1);
     }
 }
