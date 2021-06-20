@@ -1,5 +1,7 @@
 package com.codr;
 
+import com.codr.leetcodequestions.stacks.easy.RemoveAllAdjacentDuplicates.RemoveAllAdjacentDuplicates;
+import com.codr.leetcodequestions.stacks.easy.RemoveOutermostParentheses.RemoveOutermostParentheses;
 import com.codr.leetcodequestions.stacks.easy.ValidParantheses.ValidParentheses;
 import com.codr.leetcodequestions.stacks.hard.LargestRectangleInHistogram.LargestRectangleInHistogram;
 import com.codr.leetcodequestions.stacks.hard.MaximalRectangle.MaximalRectangle;
@@ -16,6 +18,8 @@ public class Main {
 //        new TrappingRainWater().process(1);
 //        new SimplifyPath().process(5);
 //        new LargestRectangleInHistogram().process(2);
-        new MaximalRectangle().process(1);
+//        new MaximalRectangle().process(1);
+//        new RemoveOutermostParentheses().process(3);
+        new RemoveAllAdjacentDuplicates().process(2);
     }
 }
