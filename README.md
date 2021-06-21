@@ -1,5 +1,3 @@
-# LowBattery 
-
 * Library for competitive programming, and interview question preparation. Also, contains solutions for leetcode questions, classified by levels and topics. Author has also tried to depict some usage of clean code. 
 
 * This repository will also contains materials around SOLID, JVM, System Design.
@@ -11,8 +9,4 @@
 * Sample: `public class XYZ extends Question<XYZOutput, XYZInput> {}`
 * In `Main.java` create the object of `<QuestionName>.java`, and invoke `process` method. 
 * NOTE: The new question file need to implement `solve`, `display` and `takeInput` model, which is invoked by `process` method.
-
-
-### Whats with that name ? 
-* My laptop was running low on battery and this notification appeared when Github was asking for name. So, its just a random name, will change it later.
 
