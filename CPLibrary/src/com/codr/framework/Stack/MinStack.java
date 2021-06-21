@@ -8,7 +8,7 @@ import java.util.Stack;
  * Stack that supports finding minimum element in O(1) time.
  */
 public class MinStack<T extends Number> implements Comparator<Number> {
-    Stack<T> primaryStack;
+    Stack <T> primaryStack;
     Stack <T> auxiliaryStack;
 
     public MinStack() {
