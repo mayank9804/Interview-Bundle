@@ -44,7 +44,6 @@ public class NextGreaterElementI extends Question<NextGreaterElementIOutput, Nex
     public NextGreaterElementIOutput solve(NextGreaterElementIInput input) {
         AtomicInteger integer = new AtomicInteger(0);
         Map<Integer, Integer> indexedInput = new HashMap<>();
-
         for (Integer e: input.nums2) {
             indexedInput.put(e, integer.getAndIncrement());
         }

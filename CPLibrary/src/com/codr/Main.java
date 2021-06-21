@@ -2,6 +2,7 @@ package com.codr;
 
 import com.codr.leetcodequestions.stacks.easy.BinaryTreeInorderTraversal.BinaryTreeInorderTraversal;
 import com.codr.leetcodequestions.stacks.easy.BuildArrayWithStack.BuildArrayWithStack;
+import com.codr.leetcodequestions.stacks.easy.MinStack.MinStack;
 import com.codr.leetcodequestions.stacks.easy.NextGreaterElementI.NextGreaterElementI;
 import com.codr.leetcodequestions.stacks.easy.RemoveAllAdjacentDuplicates.RemoveAllAdjacentDuplicates;
 import com.codr.leetcodequestions.stacks.easy.RemoveOutermostParentheses.RemoveOutermostParentheses;
@@ -26,6 +27,7 @@ public class Main {
 //        new RemoveAllAdjacentDuplicates().process(2);
 //        new BuildArrayWithStack().process(2);
 //        new BinaryTreeInorderTraversal().process(1);
-        new NextGreaterElementI().process(1);
+//        new NextGreaterElementI().process(1);
+        new MinStack().process(1);
     }
 }
