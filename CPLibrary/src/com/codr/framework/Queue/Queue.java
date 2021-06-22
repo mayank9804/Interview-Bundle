@@ -1,4 +1,4 @@
-package com.codr.framework.Stack;
+package com.codr.framework.Queue;
 
 /**
  * Base Interface for Queue.

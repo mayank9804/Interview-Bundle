@@ -1,4 +1,4 @@
-package com.codr.framework.Stack;
+package com.codr.framework.Queue;
 
 import java.util.Stack;
 
