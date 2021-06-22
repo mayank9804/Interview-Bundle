@@ -1,7 +1,6 @@
 package com.codr.framework.Trees.impl;
 
 import com.codr.framework.Trees.Tree;
-import com.codr.leetcodequestions.stacks.easy.BinaryTreeInorderTraversal.data.BinaryTreeInorderTraversalOutput;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,12 +12,12 @@ import java.util.Stack;
 /**
  * Definition of BinaryTree.
  */
-public class BinaryTree implements Tree {
-    public BinaryTreeNode root;
+public class BinaryTree<T extends Number> implements Tree {
+    public BinaryTreeNode<T> root;
 
     public BinaryTree() {}
 
-    public BinaryTree(BinaryTreeNode root) {
+    public BinaryTree(BinaryTreeNode<T> root) {
         this.root = root;
     }
 
@@ -27,17 +26,17 @@ public class BinaryTree implements Tree {
      * @param root
      * @return
      */
-    public List<Integer> iterativeInorder(BinaryTreeNode root) {
+    public List<T> iterativeInorder(BinaryTreeNode<T> root) {
 
-        List<Integer> traversalArray = new ArrayList<>();
-        Stack<BinaryTreeNode> stack = new Stack<>();
-        Map<BinaryTreeNode, Boolean> visited = new HashMap<>();
+        List<T> traversalArray = new ArrayList<>();
+        Stack<BinaryTreeNode<T>> stack = new Stack<>();
+        Map<BinaryTreeNode<T>, Boolean> visited = new HashMap<>();
 
         if (root == null) return traversalArray;
 
         stack.push(root);
         while(!stack.empty()) {
-            BinaryTreeNode peekNode = stack.peek();
+            BinaryTreeNode<T> peekNode = stack.peek();
             visited.put(peekNode, true);
 
             // No left child
@@ -55,6 +54,67 @@ public class BinaryTree implements Tree {
             }
         }
 
+        return traversalArray;
+    }
+
+    /**
+     * Computes the preorder traversal of a tree using iterative method.
+     * @param root
+     * @return
+     */
+    public List<T> iterativePreorder(BinaryTreeNode<T> root) {
+        List<T> traversalArray = new ArrayList<>();
+        Stack<BinaryTreeNode<T>> stack = new Stack<>();
+        Map<BinaryTreeNode<T>, Boolean> visited = new HashMap<>();
+
+        if (root == null) return traversalArray;
+
+        stack.push(root);
+        while(!stack.empty()) {
+            BinaryTreeNode<T> peekNode = stack.peek();
+            if (visited.getOrDefault(peekNode, false)) traversalArray.add(peekNode.val);
+
+            visited.put(peekNode, true);
+            // Leaf Node
+            if ((Objects.isNull(peekNode.left) || visited.getOrDefault(peekNode.left, false)) &&
+                    (Objects.isNull(peekNode.right) || visited.getOrDefault(peekNode.right, false)) && !stack.empty()) {
+                stack.pop();
+            } else if (Objects.nonNull(peekNode.left) && !visited.getOrDefault(peekNode.left, false)) {
+                stack.push(peekNode.left);
+            } else if (Objects.nonNull(peekNode.right)) {
+                stack.push(peekNode.right);
+            }
+        }
+        return traversalArray;
+    }
+
+    /**
+     * Computes the postorder traversal of a tree using iterative method.
+     * @param root
+     * @return
+     */
+    public List<T> iterativePostorder(BinaryTreeNode<T> root) {
+        List<T> traversalArray = new ArrayList<>();
+        Stack<BinaryTreeNode<T>> stack = new Stack<>();
+        Map<BinaryTreeNode<T>, Boolean> visited = new HashMap<>();
+
+        if (root == null) return traversalArray;
+
+        stack.push(root);
+        while(!stack.empty()) {
+            BinaryTreeNode<T> peekNode = stack.peek();
+            visited.put(peekNode, true);
+            // Leaf Node
+            if ((Objects.isNull(peekNode.left) || visited.getOrDefault(peekNode.left, false)) &&
+                    (Objects.isNull(peekNode.right) || visited.getOrDefault(peekNode.right, false)) && !stack.empty()) {
+                traversalArray.add(peekNode.val);
+                stack.pop();
+            } else if (Objects.nonNull(peekNode.left) && !visited.getOrDefault(peekNode.left, false)) {
+                stack.push(peekNode.left);
+            } else if (Objects.nonNull(peekNode.right)) {
+                stack.push(peekNode.right);
+            }
+        }
         return traversalArray;
     }
 }

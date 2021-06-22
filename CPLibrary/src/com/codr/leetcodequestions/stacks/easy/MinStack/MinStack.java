@@ -5,7 +5,9 @@ import com.codr.leetcodequestions.stacks.easy.MinStack.data.MinStackInput;
 import com.codr.leetcodequestions.stacks.easy.MinStack.data.MinStackOutput;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
@@ -21,6 +23,8 @@ import java.util.List;
 public class MinStack extends Question<MinStackOutput, MinStackInput> {
     @Override
     public MinStackOutput solve(MinStackInput input) {
+        Queue<Integer> queue1 = new LinkedList<>();
+        ((LinkedList<Integer>) queue1).pop();
         List<Integer> minimums = new ArrayList<>();
         input.minStack.push(-2);
         input.minStack.push(0);

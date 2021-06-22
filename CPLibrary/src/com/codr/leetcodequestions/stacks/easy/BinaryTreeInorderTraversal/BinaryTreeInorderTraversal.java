@@ -29,18 +29,18 @@ import java.util.Stack;
 public class BinaryTreeInorderTraversal extends Question<BinaryTreeInorderTraversalOutput, BinaryTreeInorderTraversalInput> {
     @Override
     public BinaryTreeInorderTraversalOutput solve(BinaryTreeInorderTraversalInput input) {
-        BinaryTree binaryTree = input.binaryTree;
-        BinaryTreeNode root = binaryTree.root;
+        BinaryTree<Integer> binaryTree = input.binaryTree;
+        BinaryTreeNode<Integer> root = binaryTree.root;
 
         List<Integer> traversalArray = new ArrayList<>();
-        Stack<BinaryTreeNode> stack = new Stack<>();
+        Stack<BinaryTreeNode<Integer>> stack = new Stack<>();
         Map<BinaryTreeNode, Boolean> visited = new HashMap<>();
 
         if (root == null) return new BinaryTreeInorderTraversalOutput(traversalArray);
 
         stack.push(root);
         while(!stack.empty()) {
-            BinaryTreeNode peekNode = stack.peek();
+            BinaryTreeNode<Integer> peekNode = stack.peek();
             visited.put(peekNode, true);
 
             // No left child
@@ -62,11 +62,11 @@ public class BinaryTreeInorderTraversal extends Question<BinaryTreeInorderTraver
     @Override
     public BinaryTreeInorderTraversalInput takeInput() {
         BinaryTreeInorderTraversalInput input = new BinaryTreeInorderTraversalInput();
-        input.binaryTree = new BinaryTree();
-        input.binaryTree.root = new BinaryTreeNode(1);
+        input.binaryTree = new BinaryTree<>();
+        input.binaryTree.root = new BinaryTreeNode<>(1);
         input.binaryTree.root.left = null;
-        input.binaryTree.root.right = new BinaryTreeNode(2);
-        input.binaryTree.root.right.left = new BinaryTreeNode(3, null, null);
+        input.binaryTree.root.right = new BinaryTreeNode<>(2);
+        input.binaryTree.root.right.left = new BinaryTreeNode<>(3, null, null);
         input.binaryTree.root.right.right = null;
         return input;
     }

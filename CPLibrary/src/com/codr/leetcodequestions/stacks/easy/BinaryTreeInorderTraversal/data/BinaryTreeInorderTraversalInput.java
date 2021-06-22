@@ -6,7 +6,7 @@ import com.codr.framework.Trees.impl.BinaryTree;
  * Input model for {@link com.codr.leetcodequestions.stacks.easy.BinaryTreeInorderTraversal.BinaryTreeInorderTraversal}.
  */
 public class BinaryTreeInorderTraversalInput {
-    public BinaryTree binaryTree;
+    public BinaryTree<Integer> binaryTree;
 
     public BinaryTreeInorderTraversalInput(BinaryTree binaryTree) {
         this.binaryTree = binaryTree;

@@ -5,18 +5,18 @@ import com.codr.framework.Trees.TreeNode;
 /**
  * Definition of Binary Tree Node.
  */
-public class BinaryTreeNode implements TreeNode {
-    public int val;
-    public BinaryTreeNode left;
-    public BinaryTreeNode right;
+public class BinaryTreeNode<T extends Number> implements TreeNode {
+    public T val;
+    public BinaryTreeNode<T> left;
+    public BinaryTreeNode<T> right;
 
     public BinaryTreeNode() {}
 
-    public BinaryTreeNode(int val) {
+    public BinaryTreeNode(T val) {
         this.val = val;
     }
 
-    public BinaryTreeNode(int val, BinaryTreeNode left, BinaryTreeNode right) {
+    public BinaryTreeNode(T val, BinaryTreeNode<T> left, BinaryTreeNode<T> right) {
         this.val = val;
         this.left = left;
         this.right = right;
