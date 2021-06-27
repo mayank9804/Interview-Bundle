@@ -1,5 +1,9 @@
 package com.codr;
 
+import com.codr.framework.LinkedList.LinkedList;
+import com.codr.framework.LinkedList.SinglyLinkedList.SinglyLinkedList;
+import com.codr.framework.LinkedList.SinglyLinkedList.SinglyLinkedListNode;
+import com.codr.leetcodequestions.linkedList.easy.IsPalindrome.IsPalindrome;
 import com.codr.leetcodequestions.stacks.easy.BinaryTreeInorderTraversal.BinaryTreeInorderTraversal;
 import com.codr.leetcodequestions.stacks.easy.BuildArrayWithStack.BuildArrayWithStack;
 import com.codr.leetcodequestions.stacks.easy.MinStack.MinStack;
@@ -28,6 +32,7 @@ public class Main {
 //        new BuildArrayWithStack().process(2);
 //        new BinaryTreeInorderTraversal().process(1);
 //        new NextGreaterElementI().process(1);
-        new MinStack().process(1);
+//        new MinStack().process(1);
+        new IsPalindrome().process(1);
     }
 }
