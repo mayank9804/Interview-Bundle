@@ -15,6 +15,7 @@ import com.codr.leetcodequestions.stacks.hard.LargestRectangleInHistogram.Larges
 import com.codr.leetcodequestions.stacks.hard.MaximalRectangle.MaximalRectangle;
 import com.codr.leetcodequestions.stacks.hard.TrappingRainWater.TrappingRainWater;
 import com.codr.leetcodequestions.stacks.medium.SimplifyPath.SimplifyPath;
+import com.codr.leetcodequestions.trees.medium.MaximumBinaryTree.MaximumBinaryTree;
 
 /**
  * @author Mayank
@@ -33,6 +34,7 @@ public class Main {
 //        new BinaryTreeInorderTraversal().process(1);
 //        new NextGreaterElementI().process(1);
 //        new MinStack().process(1);
-        new IsPalindrome().process(1);
+//        new IsPalindrome().process(1);
+        new MaximumBinaryTree().process(1);
     }
 }

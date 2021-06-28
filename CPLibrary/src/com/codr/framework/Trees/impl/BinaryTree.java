@@ -26,15 +26,15 @@ public class BinaryTree<T extends Number> implements Tree {
      * @param root
      * @return
      */
-    public List<T> iterativeInorder(BinaryTreeNode<T> root) {
-
+    public List<T> iterativeInorder() {
+        BinaryTreeNode<T> rootNode = this.root;
         List<T> traversalArray = new ArrayList<>();
         Stack<BinaryTreeNode<T>> stack = new Stack<>();
         Map<BinaryTreeNode<T>, Boolean> visited = new HashMap<>();
 
-        if (root == null) return traversalArray;
+        if (rootNode == null) return traversalArray;
 
-        stack.push(root);
+        stack.push(rootNode);
         while(!stack.empty()) {
             BinaryTreeNode<T> peekNode = stack.peek();
             visited.put(peekNode, true);
@@ -62,20 +62,21 @@ public class BinaryTree<T extends Number> implements Tree {
      * @param root
      * @return
      */
-    public List<T> iterativePreorder(BinaryTreeNode<T> root) {
+    public List<T> iterativePreorder() {
+        BinaryTreeNode<T> rootNode = this.root;
         List<T> traversalArray = new ArrayList<>();
         Stack<BinaryTreeNode<T>> stack = new Stack<>();
         Map<BinaryTreeNode<T>, Boolean> visited = new HashMap<>();
 
-        if (root == null) return traversalArray;
+        if (rootNode == null) return traversalArray;
 
-        stack.push(root);
+        stack.push(rootNode);
         while(!stack.empty()) {
             BinaryTreeNode<T> peekNode = stack.peek();
-            if (visited.getOrDefault(peekNode, false)) traversalArray.add(peekNode.val);
+            if (!visited.getOrDefault(peekNode, false)) traversalArray.add(peekNode.val);
 
             visited.put(peekNode, true);
-            // Leaf Node
+            // Leaf Node or a node whose children are already visited.
             if ((Objects.isNull(peekNode.left) || visited.getOrDefault(peekNode.left, false)) &&
                     (Objects.isNull(peekNode.right) || visited.getOrDefault(peekNode.right, false)) && !stack.empty()) {
                 stack.pop();
@@ -93,14 +94,15 @@ public class BinaryTree<T extends Number> implements Tree {
      * @param root
      * @return
      */
-    public List<T> iterativePostorder(BinaryTreeNode<T> root) {
+    public List<T> iterativePostorder() {
+        BinaryTreeNode<T> rootNode = this.root;
         List<T> traversalArray = new ArrayList<>();
         Stack<BinaryTreeNode<T>> stack = new Stack<>();
         Map<BinaryTreeNode<T>, Boolean> visited = new HashMap<>();
 
-        if (root == null) return traversalArray;
+        if (rootNode == null) return traversalArray;
 
-        stack.push(root);
+        stack.push(rootNode);
         while(!stack.empty()) {
             BinaryTreeNode<T> peekNode = stack.peek();
             visited.put(peekNode, true);
