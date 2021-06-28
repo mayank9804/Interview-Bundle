@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * Stack that supports finding minimum element in O(1) time.
  */
-public class MinStack<T extends Number> implements Comparator<Number>, com.codr.framework.Stack.Stack {
+public class MinStack<T extends Number> implements Comparator<Number>, com.codr.framework.Stack.Stack<T> {
     Stack <T> primaryStack;
     Stack <T> auxiliaryStack;
 
@@ -20,6 +20,7 @@ public class MinStack<T extends Number> implements Comparator<Number>, com.codr.
      * Push an element in primary stack.
      * @param val
      */
+    @Override
     public void push(T val) {
         primaryStack.push(val);
         if (auxiliaryStack.empty() || compare(val, auxiliaryStack.peek()) == 0 || compare(val, auxiliaryStack.peek()) == -1) auxiliaryStack.push(val);
@@ -38,6 +39,7 @@ public class MinStack<T extends Number> implements Comparator<Number>, com.codr.
      * Gives the top element of the primary stack.
      * @return
      */
+    @Override
     public T top() {
         return primaryStack.peek();
     }

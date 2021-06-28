@@ -6,7 +6,7 @@ import java.util.Queue;
 /**
  * Stack using two queues.
  */
-public class StackUsingQueues<T> implements Stack {
+public class StackUsingQueues<T extends Number> implements Stack<T> {
     Queue<T> queue1;
     Queue<T> queue2;
 
