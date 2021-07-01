@@ -5,7 +5,7 @@ import com.codr.framework.Trees.TreeNode;
 /**
  * Definition of Binary Tree Node.
  */
-public class BinaryTreeNode<T extends Number> implements TreeNode {
+public class BinaryTreeNode<T> implements TreeNode {
     public T val;
     public BinaryTreeNode<T> left;
     public BinaryTreeNode<T> right;

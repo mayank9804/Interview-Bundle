@@ -19,6 +19,7 @@ import com.codr.leetcodequestions.stacks.hard.MaximalRectangle.MaximalRectangle;
 import com.codr.leetcodequestions.stacks.hard.TrappingRainWater.TrappingRainWater;
 import com.codr.leetcodequestions.stacks.medium.SimplifyPath.SimplifyPath;
 import com.codr.leetcodequestions.trees.medium.ConstructBstPreorderTraversal.ConstructBstPreorderTraversal;
+import com.codr.leetcodequestions.trees.medium.ExpressionTreeFromPostfix.ExpressionTreeFromPostfix;
 import com.codr.leetcodequestions.trees.medium.MaximumBinaryTree.MaximumBinaryTree;
 
 import java.util.List;
@@ -43,5 +44,6 @@ public class Main {
 //        new IsPalindrome().process(1);
 //        new MaximumBinaryTree().process(1);
 //        new ConstructBstPreorderTraversal().process(1);
+        new ExpressionTreeFromPostfix().process(1);
     }
 }

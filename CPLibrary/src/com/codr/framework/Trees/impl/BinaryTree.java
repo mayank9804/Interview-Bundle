@@ -12,7 +12,7 @@ import java.util.Stack;
 /**
  * Definition of BinaryTree.
  */
-public class BinaryTree<T extends Number> implements Tree {
+public class BinaryTree<T> implements Tree {
     public BinaryTreeNode<T> root;
 
     public BinaryTree() {}
