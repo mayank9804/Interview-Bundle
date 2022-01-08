@@ -41,7 +41,7 @@ public class Service {
             Thread.sleep(2000);
             service.getBeer(new UserRequest("service1", new Date(), "user3"));
             service.getBeer(new UserRequest("service1", new Date(), "user4")); // should be throttled
-            Thread.sleep(7000); // Wait for 45seconds, to fasten up the window closure.
+            Thread.sleep(7000); // Wait for 7seconds, to fasten up the window closure.
         }
 
         currentDate = new Date();

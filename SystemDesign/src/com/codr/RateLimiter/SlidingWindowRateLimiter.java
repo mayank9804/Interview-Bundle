@@ -17,6 +17,7 @@ import java.util.Queue;
 public class SlidingWindowRateLimiter implements RateLimiter {
 
     private Queue<Date> queue;
+    private static final long WINDOW_PERIOD = 10000;
 
     public SlidingWindowRateLimiter() {
         this.queue = new LinkedList<>();
@@ -27,12 +28,8 @@ public class SlidingWindowRateLimiter implements RateLimiter {
         RulesRetriever rulesRetriever = new StaticHashMapRulesRetriever();
         Rule rule = rulesRetriever.retrieve(userRequest.getKey());
         long requestTime = userRequest.getTimestamp().getTime();
-        while(!queue.isEmpty()) {
-            if (((requestTime - queue.peek().getTime()) > 10000)) {
-                queue.remove();
-            } else {
-                break;
-            }
+        while(!queue.isEmpty() && ((requestTime - queue.peek().getTime()) > WINDOW_PERIOD)) {
+            queue.remove();
         }
         if (queue.size() < rule.getBurst()) {
             queue.add(userRequest.getTimestamp());

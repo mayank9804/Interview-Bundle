@@ -12,6 +12,7 @@ public class StaticHashMapRulesRetriever implements RulesRetriever {
     private Map<String, Rule> rulesStore;
 
     public StaticHashMapRulesRetriever() {
+        // Per 10 second time period.
         this.rulesStore = new HashMap<String, Rule>() {{
             put("service1", new Rule(3,3));
         }};
