@@ -1,10 +1,14 @@
 package com.codr.framework;
 
+import java.util.Scanner;
+
 /**
  * Abstract class which will be extended by each Question.
  * @param <T>
  */
 public abstract class Question<T, U>  implements Visualizer<T>{
+
+    protected Scanner scanner = new Scanner(System.in);
 
     public abstract T solve(U input);
 

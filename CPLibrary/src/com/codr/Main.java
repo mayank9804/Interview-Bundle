@@ -8,6 +8,10 @@ import com.codr.framework.Trees.impl.BinarySearchTree;
 import com.codr.framework.Trees.impl.BinarySearchTreeNode;
 import com.codr.leetcodequestions.dp.knapsack.easy.SubsetSum.SubsetSum;
 import com.codr.leetcodequestions.dp.knapsack.easy.zeroOneKnapsack.ZeroOneKnapsack;
+import com.codr.leetcodequestions.dp.knapsack.medium.EqualSumPartition.EqualSumPartition;
+import com.codr.leetcodequestions.dp.knapsack.medium.MinimumSubsetSumDifference.MinimumSubsetSumDifference;
+import com.codr.leetcodequestions.dp.knapsack.medium.SubsetSumCount.SubsetSumCount;
+import com.codr.leetcodequestions.dp.knapsack.medium.TargetSum.TargetSum;
 import com.codr.leetcodequestions.linkedList.easy.IsPalindrome.IsPalindrome;
 import com.codr.leetcodequestions.stacks.easy.BinaryTreeInorderTraversal.BinaryTreeInorderTraversal;
 import com.codr.leetcodequestions.stacks.easy.BuildArrayWithStack.BuildArrayWithStack;
@@ -49,7 +53,11 @@ public class Main {
 //        new MaximumBinaryTree().process(1);
 //        new ConstructBstPreorderTraversal().process(1);
 //        new ExpressionTreeFromPostfix().process(1);
-        new ZeroOneKnapsack().process(2);
+//        new ZeroOneKnapsack().process(2);
 //        new SubsetSum().process(2);
+//        new EqualSumPartition().process(2);
+//        new SubsetSumCount().process(2);
+//        new MinimumSubsetSumDifference().process(2);
+        new TargetSum().process(5);
     }
 }
