@@ -6,6 +6,8 @@ import com.codr.framework.LinkedList.SinglyLinkedList.SinglyLinkedListNode;
 import com.codr.framework.Stack.MaxStack;
 import com.codr.framework.Trees.impl.BinarySearchTree;
 import com.codr.framework.Trees.impl.BinarySearchTreeNode;
+import com.codr.leetcodequestions.dp.knapsack.easy.SubsetSum.SubsetSum;
+import com.codr.leetcodequestions.dp.knapsack.easy.zeroOneKnapsack.ZeroOneKnapsack;
 import com.codr.leetcodequestions.linkedList.easy.IsPalindrome.IsPalindrome;
 import com.codr.leetcodequestions.stacks.easy.BinaryTreeInorderTraversal.BinaryTreeInorderTraversal;
 import com.codr.leetcodequestions.stacks.easy.BuildArrayWithStack.BuildArrayWithStack;
@@ -46,6 +48,8 @@ public class Main {
 //        new IsPalindrome().process(1);
 //        new MaximumBinaryTree().process(1);
 //        new ConstructBstPreorderTraversal().process(1);
-        new ExpressionTreeFromPostfix().process(1);
+//        new ExpressionTreeFromPostfix().process(1);
+        new ZeroOneKnapsack().process(2);
+//        new SubsetSum().process(2);
     }
 }
