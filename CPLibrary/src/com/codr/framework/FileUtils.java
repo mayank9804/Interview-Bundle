@@ -1,6 +1,10 @@
 package com.codr.framework;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Arrays;
 
 /**
@@ -36,5 +40,37 @@ public class FileUtils {
             System.out.println("Exception occurred while create new directory named " + directoryName + " : " + e.getMessage());
             System.out.println(Arrays.toString(e.getStackTrace()));
         }
+    }
+
+    public static String readFile(final String filePath) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            StringBuilder fileContent = new StringBuilder();
+            String thisLine;
+            if (reader.ready()) {
+                while ((thisLine = reader.readLine()) != null) {
+                    fileContent.append(thisLine);
+                    fileContent.append("\n");
+                }
+            }
+            reader.close();
+            return fileContent.toString();
+        } catch (Exception e) {
+            System.out.println("Exception occurred while reading file named " + filePath + " : " + e.getMessage());
+            System.out.println(Arrays.toString(e.getStackTrace()));
+        }
+        return null;
+    }
+
+    public static String writeFile(final String filePath, final String content) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
+            writer.write(content);
+            writer.close();
+        } catch (Exception e) {
+            System.out.println("Exception occurred while writing to file named " + filePath + " : " + e.getMessage());
+            System.out.println(Arrays.toString(e.getStackTrace()));
+        }
+        return null;
     }
 }

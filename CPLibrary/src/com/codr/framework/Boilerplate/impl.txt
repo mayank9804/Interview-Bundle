@@ -1,0 +1,24 @@
+package %s;
+
+import com.codr.framework.Question;
+import %s;
+import %s;
+
+public class %s extends Question<%s, %s> {
+
+    @Override
+    public %s solve(%s input) {
+        return null;
+    }
+
+    @Override
+    public %s takeInput() {
+        return null;
+    }
+
+    @Override
+    public void display(%s content) {
+
+    }
+}
+

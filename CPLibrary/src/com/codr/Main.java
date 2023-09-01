@@ -7,6 +7,7 @@ import com.codr.framework.Stack.MaxStack;
 import com.codr.framework.Trees.impl.BinarySearchTree;
 import com.codr.framework.Trees.impl.BinarySearchTreeNode;
 import com.codr.leetcodequestions.dp.knapsack.easy.SubsetSum.SubsetSum;
+import com.codr.leetcodequestions.dp.knapsack.easy.UnboundedKnapsack.UnboundedKnapsack;
 import com.codr.leetcodequestions.dp.knapsack.easy.zeroOneKnapsack.ZeroOneKnapsack;
 import com.codr.leetcodequestions.dp.knapsack.medium.EqualSumPartition.EqualSumPartition;
 import com.codr.leetcodequestions.dp.knapsack.medium.MinimumSubsetSumDifference.MinimumSubsetSumDifference;
@@ -58,6 +59,7 @@ public class Main {
 //        new EqualSumPartition().process(2);
 //        new SubsetSumCount().process(2);
 //        new MinimumSubsetSumDifference().process(2);
-        new TargetSum().process(5);
+//        new TargetSum().process(5);
+        new UnboundedKnapsack().process(1);
     }
 }
