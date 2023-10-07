@@ -7,8 +7,4 @@
 ## Create a new question
 
 * `java com.codr.framework.Bootstrap <QuestionName> <QuestionTopic> <QuestionLevel>`
-* Extend <QuestionName.java> with Question.java, and use output, input models of question for generic parameters.
-* Sample: `public class XYZ extends Question<XYZOutput, XYZInput> {}`
-* In `Main.java` create the object of `<QuestionName>.java`, and invoke `process` method. 
-* NOTE: The new question file need to implement `solve`, `display` and `takeInput` model, which is invoked by `process` method.
-
+# Voila! Go ahead and write some code 🥳
