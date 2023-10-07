@@ -11,6 +11,9 @@ import com.codr.leetcodequestions.dp.LCS.medium.LongestCommonSubsequenceContent.
 import com.codr.leetcodequestions.dp.LCS.medium.LongestRepeatingSubsequence.LongestRepeatingSubsequence;
 import com.codr.leetcodequestions.dp.LCS.medium.ShortestCommonSupersequence.ShortestCommonSupersequence;
 import com.codr.leetcodequestions.dp.LCS.medium.ShortestCommonSupersequence.data.ShortestCommonSupersequenceOutput;
+import com.codr.leetcodequestions.dp.MCM.easy.MatrixChainMultiplication.MatrixChainMultiplication;
+import com.codr.leetcodequestions.dp.MCM.medium.BooleanParenthesis.BooleanParenthesis;
+import com.codr.leetcodequestions.dp.MCM.medium.PalindromePartitioning.PalindromePartitioning;
 import com.codr.leetcodequestions.dp.knapsack.easy.CoinChangeMaxWays.CoinChangeMaxWays;
 import com.codr.leetcodequestions.dp.knapsack.easy.SubsetSum.SubsetSum;
 import com.codr.leetcodequestions.dp.knapsack.easy.UnboundedKnapsack.UnboundedKnapsack;
@@ -74,6 +77,9 @@ public class Main {
 //        new LongestCommonSubsequenceContent().process(2);
 //        new ShortestCommonSupersequence().process(2);
 //        new LongestRepeatingSubsequence().process(2);
-        new CoinChangeMinCoins().process(2);
+//        new CoinChangeMinCoins().process(2);
+//        new MatrixChainMultiplication().process(2);
+//        new PalindromePartitioning().process(2);
+        new BooleanParenthesis().process(2);
     }
 }
