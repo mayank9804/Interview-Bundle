@@ -6,11 +6,17 @@ import com.codr.framework.LinkedList.SinglyLinkedList.SinglyLinkedListNode;
 import com.codr.framework.Stack.MaxStack;
 import com.codr.framework.Trees.impl.BinarySearchTree;
 import com.codr.framework.Trees.impl.BinarySearchTreeNode;
+import com.codr.leetcodequestions.dp.LCS.medium.LCS.LCS;
+import com.codr.leetcodequestions.dp.LCS.medium.LongestCommonSubsequenceContent.LongestCommonSubsequenceContent;
+import com.codr.leetcodequestions.dp.LCS.medium.LongestRepeatingSubsequence.LongestRepeatingSubsequence;
+import com.codr.leetcodequestions.dp.LCS.medium.ShortestCommonSupersequence.ShortestCommonSupersequence;
+import com.codr.leetcodequestions.dp.LCS.medium.ShortestCommonSupersequence.data.ShortestCommonSupersequenceOutput;
 import com.codr.leetcodequestions.dp.knapsack.easy.CoinChangeMaxWays.CoinChangeMaxWays;
 import com.codr.leetcodequestions.dp.knapsack.easy.SubsetSum.SubsetSum;
 import com.codr.leetcodequestions.dp.knapsack.easy.UnboundedKnapsack.UnboundedKnapsack;
 import com.codr.leetcodequestions.dp.knapsack.easy.UnboundedKnapsackRecursive.UnboundedKnapsackRecursive;
 import com.codr.leetcodequestions.dp.knapsack.easy.zeroOneKnapsack.ZeroOneKnapsack;
+import com.codr.leetcodequestions.dp.knapsack.medium.CoinChangeMinCoins.CoinChangeMinCoins;
 import com.codr.leetcodequestions.dp.knapsack.medium.EqualSumPartition.EqualSumPartition;
 import com.codr.leetcodequestions.dp.knapsack.medium.MinimumSubsetSumDifference.MinimumSubsetSumDifference;
 import com.codr.leetcodequestions.dp.knapsack.medium.SubsetSumCount.SubsetSumCount;
@@ -64,6 +70,10 @@ public class Main {
 //        new MinimumSubsetSumDifference().process(2);
 //        new TargetSum().process(5);
 //        new UnboundedKnapsack().process(1);
-        new CoinChangeMaxWays().process(2);
+//        new CoinChangeMaxWays().process(2);
+//        new LongestCommonSubsequenceContent().process(2);
+//        new ShortestCommonSupersequence().process(2);
+//        new LongestRepeatingSubsequence().process(2);
+        new CoinChangeMinCoins().process(2);
     }
 }

@@ -16,6 +16,7 @@ public class Bootstraper {
     private static String QUESTION_IMPL_PACKAGE_NAMESPACE = "com.codr.leetcodequestions.%s.%s.%s";
     private static String QUESTION_IMPLEMENTATION_BOILER_PLATE_FILE = QUESTION_BOILER_PLATE_DIR + "/impl.txt";
     static Scanner inputScanner = new Scanner(System.in);
+
     public static void main(String...args) {
         String questionName = inputScanner.nextLine();
         String tag = inputScanner.nextLine();
